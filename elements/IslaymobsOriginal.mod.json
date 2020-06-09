@@ -2,16 +2,18 @@
   "_fv": 8,
   "_type": "musicdisc",
   "definition": {
-    "texture": "original",
-    "name": "I Slay Mobs",
-    "description": "Original",
+    "texture": "disk",
+    "name": "Music Disk",
+    "description": "I Slay Mobs",
     "creativeTab": {
       "value": "MISC"
     },
     "music": {
       "value": "CUSTOM:original"
     },
-    "specialInfo": [],
+    "specialInfo": [
+      "Original"
+    ],
     "hasGlow": false
   }
 }

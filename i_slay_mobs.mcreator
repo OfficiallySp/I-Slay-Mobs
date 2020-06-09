@@ -62,6 +62,32 @@
           }
         ]
       }
+    },
+    {
+      "name": "Command",
+      "type": "command",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "command"
+    },
+    {
+      "name": "CommandExecuted",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -79,11 +105,11 @@
   ],
   "language_map": {
     "en_us": {
-      "item.i_slay_mobs.islaymobs_original.desc": "Original",
-      "item.i_slay_mobs.islaymobs_remaster": "I Slay Mobs",
+      "item.i_slay_mobs.islaymobs_original.desc": "I Slay Mobs",
+      "item.i_slay_mobs.islaymobs_remaster": "Music Disk",
       "advancements.unlock.title": "I Slay Mobs",
-      "item.i_slay_mobs.islaymobs_original": "I Slay Mobs",
-      "item.i_slay_mobs.islaymobs_remaster.desc": "Remastered",
+      "item.i_slay_mobs.islaymobs_original": "Music Disk",
+      "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
       "advancements.unlock.descr": "Slay Slay Slay Everyday"
     }
   },
@@ -91,15 +117,17 @@
     "modid": "i_slay_mobs",
     "modName": "I Slay Mobs",
     "version": "1.0.0",
-    "author": "shane, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "author": "Shane Pepperell",
+    "websiteURL": "https://officiallysp.sytes.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "disk",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
+    "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false
   },

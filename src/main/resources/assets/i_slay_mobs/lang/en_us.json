@@ -1,8 +1,8 @@
 {
-  "item.i_slay_mobs.islaymobs_original.desc": "Original",
-  "item.i_slay_mobs.islaymobs_remaster": "I Slay Mobs",
+  "item.i_slay_mobs.islaymobs_original.desc": "I Slay Mobs",
+  "item.i_slay_mobs.islaymobs_remaster": "Music Disk",
   "advancements.unlock.title": "I Slay Mobs",
-  "item.i_slay_mobs.islaymobs_original": "I Slay Mobs",
-  "item.i_slay_mobs.islaymobs_remaster.desc": "Remastered",
+  "item.i_slay_mobs.islaymobs_original": "Music Disk",
+  "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
   "advancements.unlock.descr": "Slay Slay Slay Everyday"
 }

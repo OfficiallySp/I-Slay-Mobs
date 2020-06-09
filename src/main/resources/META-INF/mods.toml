@@ -5,9 +5,10 @@ loaderVersion="[31,)"
 modId="i_slay_mobs"
 version="1.0.0"
 displayName="I Slay Mobs"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="shane, MCreator"
+credits="The greatest meme from 2015"
+displayURL="https://officiallysp.sytes.net"
+logoFile="logo.png"
+authors="Shane Pepperell"
 
 [[dependencies.i_slay_mobs]]
     modId="minecraft"

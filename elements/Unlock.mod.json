@@ -22,6 +22,6 @@
     "parent": {
       "value": "adventure/kill_a_mob"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"62\" y=\"87\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"39\" y=\"99\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }
 }
