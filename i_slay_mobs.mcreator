@@ -1,10 +1,91 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "IslaymobsOriginal",
+      "type": "musicdisc",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "islaymobs_original"
+    },
+    {
+      "name": "IslaymobsRemaster",
+      "type": "musicdisc",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "islaymobs_remaster"
+    },
+    {
+      "name": "Unlock",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unlock"
+    },
+    {
+      "name": "Diskdrop",
+      "type": "loottable",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diskdrop"
+    },
+    {
+      "name": "Enchant",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchant"
+    },
+    {
+      "name": "Trigger",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "remaster",
+      "file": "i_slay_mobs_-_remastered",
+      "category": "record"
+    },
+    {
+      "name": "original",
+      "file": "i_slay_mobs",
+      "category": "record"
+    }
+  ],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.i_slay_mobs.islaymobs_original.desc": "Original",
+      "item.i_slay_mobs.islaymobs_remaster": "I Slay Mobs",
+      "advancements.unlock.title": "I Slay Mobs",
+      "item.i_slay_mobs.islaymobs_original": "I Slay Mobs",
+      "item.i_slay_mobs.islaymobs_remaster.desc": "Remastered",
+      "advancements.unlock.descr": "Slay Slay Slay Everyday"
+    }
   },
   "workspaceSettings": {
     "modid": "i_slay_mobs",

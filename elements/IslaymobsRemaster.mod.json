@@ -1,0 +1,17 @@
+{
+  "_fv": 8,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "original",
+    "name": "I Slay Mobs",
+    "description": "Remastered",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:remaster"
+    },
+    "specialInfo": [],
+    "hasGlow": true
+  }
+}

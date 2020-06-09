@@ -1,1 +1,20 @@
-{}
+{
+  "remaster": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "i_slay_mobs:i_slay_mobs_-_remastered",
+        "stream": true
+      }
+    ]
+  },
+  "original": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "i_slay_mobs:i_slay_mobs",
+        "stream": true
+      }
+    ]
+  }
+}

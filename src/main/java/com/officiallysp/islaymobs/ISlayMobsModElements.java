@@ -51,6 +51,10 @@ public class ISlayMobsModElements {
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public ISlayMobsModElements() {
+		sounds.put(new ResourceLocation("i_slay_mobs", "remaster"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "remaster")));
+		sounds.put(new ResourceLocation("i_slay_mobs", "original"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "original")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("i_slay_mobs").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
