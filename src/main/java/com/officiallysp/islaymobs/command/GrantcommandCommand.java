@@ -19,9 +19,9 @@ import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.arguments.StringArgumentType;
 
 @ISlayMobsModElements.ModElement.Tag
-public class CommandCommand extends ISlayMobsModElements.ModElement {
-	public CommandCommand(ISlayMobsModElements instance) {
-		super(instance, 7);
+public class GrantcommandCommand extends ISlayMobsModElements.ModElement {
+	public GrantcommandCommand(ISlayMobsModElements instance) {
+		super(instance, 9);
 	}
 
 	@Override
@@ -30,7 +30,7 @@ public class CommandCommand extends ISlayMobsModElements.ModElement {
 	}
 
 	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("slaymobs")
+		return LiteralArgumentBuilder.<CommandSource>literal("slaymobs slay")
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
 	}
 

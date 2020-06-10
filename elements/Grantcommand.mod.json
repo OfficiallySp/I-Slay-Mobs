@@ -2,7 +2,7 @@
   "_fv": 8,
   "_type": "command",
   "definition": {
-    "commandName": "slaymobs",
+    "commandName": "slaymobs slay",
     "onCommandExecuted": {
       "name": "CommandExecuted"
     }
