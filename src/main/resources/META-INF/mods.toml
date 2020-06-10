@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[31,)"
+loaderVersion="[28,)"
 
 [[mods]]
 modId="i_slay_mobs"
@@ -13,7 +13,7 @@ authors="Shane Pepperell"
 [[dependencies.i_slay_mobs]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.15.2]"
+    versionRange="[1.14.4]"
     ordering="NONE"
     side="BOTH"
 

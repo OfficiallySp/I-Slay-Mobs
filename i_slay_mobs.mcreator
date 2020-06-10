@@ -107,10 +107,10 @@
     "en_us": {
       "item.i_slay_mobs.islaymobs_original.desc": "I Slay Mobs",
       "item.i_slay_mobs.islaymobs_remaster": "Music Disk",
-      "advancements.unlock.title": "I Slay Mobs",
+      "advancements.unlock.title": "Slay Slay Slay Everyday",
       "item.i_slay_mobs.islaymobs_original": "Music Disk",
       "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
-      "advancements.unlock.descr": "Slay Slay Slay Everyday"
+      "advancements.unlock.descr": "Resist enemy attacks and be rewarded"
     }
   },
   "workspaceSettings": {
@@ -126,7 +126,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.15.2",
+    "currentGenerator": "1.14.4",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false

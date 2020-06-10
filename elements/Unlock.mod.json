@@ -2,8 +2,8 @@
   "_fv": 8,
   "_type": "achievement",
   "definition": {
-    "achievementName": "I Slay Mobs",
-    "achievementDescription": "Slay Slay Slay Everyday",
+    "achievementName": "Slay Slay Slay Everyday",
+    "achievementDescription": "Resist enemy attacks and be rewarded",
     "achievementIcon": {
       "value": "CUSTOM:IslaymobsOriginal"
     },
