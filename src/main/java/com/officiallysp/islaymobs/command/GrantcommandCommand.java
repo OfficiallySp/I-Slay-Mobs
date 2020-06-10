@@ -30,7 +30,7 @@ public class GrantcommandCommand extends ISlayMobsModElements.ModElement {
 	}
 
 	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("slaymobsslay")
+		return LiteralArgumentBuilder.<CommandSource>literal("slaymobs")
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
 	}
 
