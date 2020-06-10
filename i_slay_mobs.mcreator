@@ -121,6 +121,7 @@
     "modid": "i_slay_mobs",
     "modName": "I Slay Mobs",
     "version": "1.0.0",
+    "description": "Slay Slay Slay Everyday",
     "author": "Shane Pepperell",
     "websiteURL": "https://officiallysp.sytes.net",
     "disableForgeVersionCheck": true,
