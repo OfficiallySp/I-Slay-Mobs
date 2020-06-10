@@ -59,6 +59,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       }
@@ -126,7 +130,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "1.14.4",
+    "currentGenerator": "forge-1.15.2",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false

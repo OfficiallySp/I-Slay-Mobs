@@ -1,13 +1,14 @@
 package com.officiallysp.islaymobs.procedures;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
@@ -28,17 +29,22 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 			System.err.println("Failed to load dependency entity for procedure Trigger!");
 			return;
 		}
+		if (dependencies.get("sourceentity") == null) {
+			System.err.println("Failed to load dependency sourceentity for procedure Trigger!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((Math.random() == 1)) {
-			if (entity instanceof ServerPlayerEntity) {
-				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
+		if (((entity instanceof ZombieEntity) && (Math.random() < 0.1))) {
+			if (sourceentity instanceof ServerPlayerEntity) {
+				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) sourceentity).server).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("i_slay_mobs:unlock"));
-				AdvancementProgress _ap = ((ServerPlayerEntity) entity).getAdvancements().getProgress(_adv);
+				AdvancementProgress _ap = ((ServerPlayerEntity) sourceentity).getAdvancements().getProgress(_adv);
 				if (!_ap.isDone()) {
 					Iterator _iterator = _ap.getRemaningCriteria().iterator();
 					while (_iterator.hasNext()) {
 						String _criterion = (String) _iterator.next();
-						((ServerPlayerEntity) entity).getAdvancements().grantCriterion(_adv, _criterion);
+						((ServerPlayerEntity) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
 					}
 				}
 			}
@@ -46,7 +52,7 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 	}
 
 	@SubscribeEvent
-	public void onEntityAttacked(LivingAttackEvent event) {
+	public void onEntityDeath(LivingDeathEvent event) {
 		if (event != null && event.getEntity() != null) {
 			Entity entity = event.getEntity();
 			Entity sourceentity = event.getSource().getTrueSource();
