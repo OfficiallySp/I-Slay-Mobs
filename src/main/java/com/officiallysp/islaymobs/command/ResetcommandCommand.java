@@ -30,7 +30,7 @@ public class ResetcommandCommand extends ISlayMobsModElements.ModElement {
 	}
 
 	private LiteralArgumentBuilder<CommandSource> customCommand() {
-		return LiteralArgumentBuilder.<CommandSource>literal("slaymobs reset")
+		return LiteralArgumentBuilder.<CommandSource>literal("slaymobsreset")
 				.then(Commands.argument("arguments", StringArgumentType.greedyString()).executes(this::execute)).executes(this::execute);
 	}
 
