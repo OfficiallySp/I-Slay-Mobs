@@ -1,11 +1,28 @@
 package com.officiallysp.islaymobs.procedures;
 
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.common.MinecraftForge;
+
+import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.monster.ZombieEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
+
+import java.util.Map;
+import java.util.Iterator;
+import java.util.HashMap;
+
+import com.officiallysp.islaymobs.ISlayMobsModElements;
+
 @ISlayMobsModElements.ModElement.Tag
 public class TriggerProcedure extends ISlayMobsModElements.ModElement {
-
 	public TriggerProcedure(ISlayMobsModElements instance) {
 		super(instance, 6);
-
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
@@ -18,10 +35,8 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 			System.err.println("Failed to load dependency sourceentity for procedure Trigger!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-
 		if (((entity instanceof ZombieEntity) && (Math.random() < 0.1))) {
 			if (sourceentity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) sourceentity).server).getAdvancementManager()
@@ -36,7 +51,6 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 				}
 			}
 		}
-
 	}
 
 	@SubscribeEvent
@@ -59,5 +73,4 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 			this.executeProcedure(dependencies);
 		}
 	}
-
 }

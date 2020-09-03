@@ -50,7 +50,7 @@
       "name": "Trigger",
       "type": "procedure",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "trigger",
@@ -71,7 +71,7 @@
       "name": "CommandExecuted",
       "type": "procedure",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "command_executed",
@@ -88,7 +88,7 @@
       "name": "Grantcommand",
       "type": "command",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "grantcommand"
@@ -154,5 +154,5 @@
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000322116
+  "mcreatorVersion": 202000432115
 }
