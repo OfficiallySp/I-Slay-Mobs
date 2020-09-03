@@ -1,11 +1,27 @@
 package com.officiallysp.islaymobs.procedures;
 
+import net.minecraftforge.items.ItemHandlerHelper;
+
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
+
+import java.util.Map;
+import java.util.Iterator;
+
+import com.officiallysp.islaymobs.item.IslaymobsRemasterItem;
+import com.officiallysp.islaymobs.item.IslaymobsOriginalItem;
+import com.officiallysp.islaymobs.ISlayMobsModElements;
+
 @ISlayMobsModElements.ModElement.Tag
 public class CommandExecutedProcedure extends ISlayMobsModElements.ModElement {
-
 	public CommandExecutedProcedure(ISlayMobsModElements instance) {
 		super(instance, 8);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -13,9 +29,7 @@ public class CommandExecutedProcedure extends ISlayMobsModElements.ModElement {
 			System.err.println("Failed to load dependency entity for procedure CommandExecuted!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if ((entity.hasPermissionLevel((int) 2))) {
 			if (entity instanceof ServerPlayerEntity) {
 				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) entity).server).getAdvancementManager()
@@ -40,7 +54,5 @@ public class CommandExecutedProcedure extends ISlayMobsModElements.ModElement {
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
 		}
-
 	}
-
 }

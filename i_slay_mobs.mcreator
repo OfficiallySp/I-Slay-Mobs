@@ -143,12 +143,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "just_enough_items",
-      "curios",
-      "patchouli",
-      "arcanecraft"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
