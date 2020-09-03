@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "i_slay_mobs:items/disk"
-  }
-}
