@@ -14,6 +14,8 @@ import net.minecraft.advancements.Advancement;
 import java.util.Map;
 import java.util.Iterator;
 
+import com.officiallysp.islaymobs.item.IslaymobsremasterxmasItem;
+import com.officiallysp.islaymobs.item.IslaymobsoriginalxmasItem;
 import com.officiallysp.islaymobs.item.IslaymobsRemasterItem;
 import com.officiallysp.islaymobs.item.IslaymobsOriginalItem;
 import com.officiallysp.islaymobs.ISlayMobsModElements;
@@ -50,6 +52,16 @@ public class CommandExecutedProcedure extends ISlayMobsModElements.ModElement {
 			}
 			if (entity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(IslaymobsRemasterItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(IslaymobsoriginalxmasItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(IslaymobsremasterxmasItem.block, (int) (1));
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
 			}
