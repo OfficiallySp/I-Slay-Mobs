@@ -139,7 +139,7 @@
     "websiteURL": "https://officiallysp.sytes.net",
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
-    "updateURL": "https://github.com/OfficiallySp777/I-Slay-Mobs",
+    "updateURL": "https://raw.githubusercontent.com/OfficiallySp777/I-Slay-Mobs/master/Update.json",
     "modPicture": "original",
     "requiredMods": [],
     "dependencies": [],
