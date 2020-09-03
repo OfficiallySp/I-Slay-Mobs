@@ -3,10 +3,11 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="i_slay_mobs"
-version="1.0.1"
+version="1.1.0"
 displayName="I Slay Mobs"
 credits="The greatest meme from 2015"
 displayURL="https://officiallysp.sytes.net"
+updateJSONURL="https://github.com/OfficiallySp777/I-Slay-Mobs"
 authors="Shane Pepperell"
 description='''
 Slay Slay Slay Everyday
@@ -19,6 +20,12 @@ Slay Slay Slay Everyday
     ordering="NONE"
     side="BOTH"
 
+[[dependencies.i_slay_mobs]]
+    modId="forge"
+    mandatory=true
+    versionRange="[31.2.0]"
+    ordering="NONE"
+    side="BOTH"
 
 
 [[dependencies.i_slay_mobs]]
