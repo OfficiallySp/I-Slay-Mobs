@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "i_slay_mobs",
+    "name": "I Slay Mobs",
+    "description": "Slay Slay Slay Everyday",
+    "version": "1.0.0",
+    "credits": "The greatest meme from 2015",
+    "logoFile": "assets/i_slay_mobs/textures/disk.png",
+    "mcversion": "1.12.2",
+    "url": "https://officiallysp.sytes.net",
+    "updateUrl": "",
+    "authorList": [
+      "Shane Pepperell"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "requiredMods": [],
+    "useDependencyInformation": "true"
+  }
+]
