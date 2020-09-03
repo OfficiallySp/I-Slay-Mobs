@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "i_slay_mobs:islaymobs_original"
+    },
+    "title": {
+      "translate": "advancements.unlock.title"
+    },
+    "description": {
+      "translate": "advancements.unlock.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "loot": [
+      "i_slay_mobs:diskdrop"
+    ]
+  },
+  "parent": "minecraft:adventure/kill_a_mob"
+}
