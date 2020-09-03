@@ -1,9 +1,9 @@
 {
-  "_fv": 8,
+  "_fv": 10,
   "_type": "achievement",
   "definition": {
     "achievementName": "Slay Slay Slay Everyday",
-    "achievementDescription": "Resist enemy attacks and be rewarded",
+    "achievementDescription": "Keep slaying Zombies and be rewarded",
     "achievementIcon": {
       "value": "CUSTOM:IslaymobsOriginal"
     },

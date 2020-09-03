@@ -109,18 +109,22 @@
   ],
   "language_map": {
     "en_us": {
+      "item.islaymobs_remaster.name": "Music Disk",
       "item.i_slay_mobs.islaymobs_original.desc": "I Slay Mobs",
+      "item.record.islaymobs_original.desc": "I Slay Mobs",
       "item.i_slay_mobs.islaymobs_remaster": "Music Disk",
       "advancements.unlock.title": "Slay Slay Slay Everyday",
+      "item.record.islaymobs_remaster.desc": "I Slay Mobs",
       "item.i_slay_mobs.islaymobs_original": "Music Disk",
+      "item.islaymobs_original.name": "Music Disk",
       "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
-      "advancements.unlock.descr": "Resist enemy attacks and be rewarded"
+      "advancements.unlock.descr": "Keep slaying Zombies and be rewarded"
     }
   },
   "workspaceSettings": {
     "modid": "i_slay_mobs",
     "modName": "I Slay Mobs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Slay Slay Slay Everyday",
     "author": "Shane Pepperell",
     "websiteURL": "https://officiallysp.sytes.net",
@@ -131,10 +135,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.15.2",
+    "currentGenerator": "forge-1.12.2",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000322116
+  "mcreatorVersion": 202000432115
 }

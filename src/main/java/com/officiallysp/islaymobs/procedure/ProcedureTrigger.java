@@ -1,30 +1,31 @@
-package com.officiallysp.islaymobs.procedures;
+package com.officiallysp.islaymobs.procedure;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.monster.ZombieEntity;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
+import java.util.Map;
 import java.util.Iterator;
 
-import com.officiallysp.islaymobs.ISlayMobsModElements;
+import com.officiallysp.islaymobs.ElementsISlayMobsMod;
 
-@ISlayMobsModElements.ModElement.Tag
-public class TriggerProcedure extends ISlayMobsModElements.ModElement {
-	public TriggerProcedure(ISlayMobsModElements instance) {
+@ElementsISlayMobsMod.ModElement.Tag
+public class ProcedureTrigger extends ElementsISlayMobsMod.ModElement {
+	public ProcedureTrigger(ElementsISlayMobsMod instance) {
 		super(instance, 6);
-		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure Trigger!");
 			return;
@@ -35,16 +36,16 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
-		if (((entity instanceof ZombieEntity) && (Math.random() < 0.1))) {
-			if (sourceentity instanceof ServerPlayerEntity) {
-				Advancement _adv = ((MinecraftServer) ((ServerPlayerEntity) sourceentity).server).getAdvancementManager()
+		if (((entity instanceof EntityZombie) && (Math.random() < 0.1))) {
+			if (sourceentity instanceof EntityPlayerMP) {
+				Advancement _adv = ((MinecraftServer) ((EntityPlayerMP) sourceentity).mcServer).getAdvancementManager()
 						.getAdvancement(new ResourceLocation("i_slay_mobs:unlock"));
-				AdvancementProgress _ap = ((ServerPlayerEntity) sourceentity).getAdvancements().getProgress(_adv);
+				AdvancementProgress _ap = ((EntityPlayerMP) sourceentity).getAdvancements().getProgress(_adv);
 				if (!_ap.isDone()) {
 					Iterator _iterator = _ap.getRemaningCriteria().iterator();
 					while (_iterator.hasNext()) {
 						String _criterion = (String) _iterator.next();
-						((ServerPlayerEntity) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
+						((EntityPlayerMP) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
 					}
 				}
 			}
@@ -55,10 +56,9 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 	public void onEntityDeath(LivingDeathEvent event) {
 		if (event != null && event.getEntity() != null) {
 			Entity entity = event.getEntity();
-			Entity sourceentity = event.getSource().getTrueSource();
-			int i = (int) entity.getPosX();
-			int j = (int) entity.getPosY();
-			int k = (int) entity.getPosZ();
+			int i = (int) entity.posX;
+			int j = (int) entity.posY;
+			int k = (int) entity.posZ;
 			World world = entity.world;
 			java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
 			dependencies.put("x", i);
@@ -66,9 +66,13 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 			dependencies.put("z", k);
 			dependencies.put("world", world);
 			dependencies.put("entity", entity);
-			dependencies.put("sourceentity", sourceentity);
 			dependencies.put("event", event);
 			this.executeProcedure(dependencies);
 		}
+	}
+
+	@Override
+	public void preInit(FMLPreInitializationEvent event) {
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 }
