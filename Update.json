@@ -1,6 +1,11 @@
 {
-  "homepage": "https://github.com/OfficiallySp777/I-Slay-Mobs/releases",
-  "promos": {
-    "1.15.2-latest": "1.1.1",
-  }
+	"homepage": "https://github.com/OfficiallySp777/I-Slay-Mobs",
+	"promos": {
+		"1.15.2-latest": "1.1.1",
+		"1.15.2-recommended": "1.1.1",
+		"1.14.4-latest": "1.1.1",
+		"1.14.4-recommended": "1.1.1",
+		"1.12.2-latest": "1.1.1",
+		"1.12.2-recommended": "1.1.1",
+	}
 }
