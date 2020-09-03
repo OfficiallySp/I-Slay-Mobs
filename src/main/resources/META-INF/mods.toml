@@ -34,14 +34,4 @@ Slay Slay Slay Everyday
     mandatory=false
     ordering="NONE"
     side="BOTH"
-[[dependencies.i_slay_mobs]]
-    modId="curios"
-    mandatory=false
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.i_slay_mobs]]
-    modId="patchouli"
-    mandatory=false
-    ordering="NONE"
-    side="BOTH"
 

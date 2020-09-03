@@ -145,9 +145,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "just_enough_items",
-      "curios",
-      "patchouli"
+      "just_enough_items"
     ],
     "currentGenerator": "forge-1.15.2",
     "credits": "The greatest meme from 2015",
