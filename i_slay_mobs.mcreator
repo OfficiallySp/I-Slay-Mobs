@@ -140,6 +140,7 @@
     "disableForgeVersionCheck": false,
     "serverSideOnly": false,
     "updateURL": "https://github.com/OfficiallySp777/I-Slay-Mobs",
+    "modPicture": "original",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
