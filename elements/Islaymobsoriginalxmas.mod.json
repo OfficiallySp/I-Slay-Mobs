@@ -1,0 +1,19 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "xmas",
+    "name": "Islaymobsoriginalxmas",
+    "description": "I Slay Mobs",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:ogxmas"
+    },
+    "specialInfo": [
+      "Christmas Edition"
+    ],
+    "hasGlow": false
+  }
+}

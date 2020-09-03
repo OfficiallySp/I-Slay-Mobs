@@ -7,6 +7,10 @@
   "item.record.islaymobs_remaster.desc": "I Slay Mobs",
   "item.i_slay_mobs.islaymobs_original": "Music Disk",
   "item.islaymobs_original.name": "Music Disk",
+  "advancements.unlock.descr": "Slay zombies and be rewarded",
+  "item.i_slay_mobs.islaymobsremasterxmas.desc": "I Slay Mobs",
+  "item.i_slay_mobs.islaymobsoriginalxmas.desc": "I Slay Mobs",
   "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
-  "advancements.unlock.descr": "Slay zombies and be rewarded"
+  "item.i_slay_mobs.islaymobsoriginalxmas": "Islaymobsoriginalxmas",
+  "item.i_slay_mobs.islaymobsremasterxmas": "Islaymobsremasterxmas"
 }

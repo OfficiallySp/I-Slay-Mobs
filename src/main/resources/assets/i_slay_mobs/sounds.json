@@ -1,18 +1,36 @@
 {
-  "remaster": {
+  "og": {
     "category": "record",
     "sounds": [
       {
-        "name": "i_slay_mobs:i_slay_mobs_-_remastered",
+        "name": "i_slay_mobs:og",
         "stream": true
       }
     ]
   },
-  "original": {
+  "ogxmas": {
     "category": "record",
     "sounds": [
       {
-        "name": "i_slay_mobs:i_slay_mobs",
+        "name": "i_slay_mobs:ogxmas",
+        "stream": true
+      }
+    ]
+  },
+  "remastered": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "i_slay_mobs:remastered",
+        "stream": true
+      }
+    ]
+  },
+  "remasteredxmas": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "i_slay_mobs:remasteredxmas",
         "stream": true
       }
     ]

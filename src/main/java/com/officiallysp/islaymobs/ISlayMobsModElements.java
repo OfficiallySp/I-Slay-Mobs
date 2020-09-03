@@ -47,10 +47,12 @@ public class ISlayMobsModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public ISlayMobsModElements() {
-		sounds.put(new ResourceLocation("i_slay_mobs", "remaster"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "remaster")));
-		sounds.put(new ResourceLocation("i_slay_mobs", "original"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "original")));
+		sounds.put(new ResourceLocation("i_slay_mobs", "og"), new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "og")));
+		sounds.put(new ResourceLocation("i_slay_mobs", "ogxmas"), new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "ogxmas")));
+		sounds.put(new ResourceLocation("i_slay_mobs", "remastered"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "remastered")));
+		sounds.put(new ResourceLocation("i_slay_mobs", "remasteredxmas"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("i_slay_mobs", "remasteredxmas")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("i_slay_mobs").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

@@ -32,7 +32,7 @@ public class IslaymobsOriginalItem extends ISlayMobsModElements.ModElement {
 	}
 	public static class MusicDiscItemCustom extends MusicDiscItem {
 		public MusicDiscItemCustom() {
-			super(0, ISlayMobsModElements.sounds.get(new ResourceLocation("i_slay_mobs:original")),
+			super(0, ISlayMobsModElements.sounds.get(new ResourceLocation("i_slay_mobs:og")),
 					new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).rarity(Rarity.RARE));
 			setRegistryName("islaymobs_original");
 		}

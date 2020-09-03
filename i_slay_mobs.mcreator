@@ -101,18 +101,46 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "disenchant"
+    },
+    {
+      "name": "Islaymobsoriginalxmas",
+      "type": "musicdisc",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "islaymobsoriginalxmas"
+    },
+    {
+      "name": "Islaymobsremasterxmas",
+      "type": "musicdisc",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "islaymobsremasterxmas"
     }
   ],
   "variable_elements": [],
   "sound_elements": [
     {
-      "name": "remaster",
-      "file": "i_slay_mobs_-_remastered",
+      "name": "og",
+      "file": "og",
       "category": "record"
     },
     {
-      "name": "original",
-      "file": "i_slay_mobs",
+      "name": "ogxmas",
+      "file": "ogxmas",
+      "category": "record"
+    },
+    {
+      "name": "remastered",
+      "file": "remastered",
+      "category": "record"
+    },
+    {
+      "name": "remasteredxmas",
+      "file": "remasteredxmas",
       "category": "record"
     }
   ],
@@ -126,8 +154,12 @@
       "item.record.islaymobs_remaster.desc": "I Slay Mobs",
       "item.i_slay_mobs.islaymobs_original": "Music Disk",
       "item.islaymobs_original.name": "Music Disk",
+      "advancements.unlock.descr": "Slay zombies and be rewarded",
+      "item.i_slay_mobs.islaymobsremasterxmas.desc": "I Slay Mobs",
+      "item.i_slay_mobs.islaymobsoriginalxmas.desc": "I Slay Mobs",
       "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
-      "advancements.unlock.descr": "Slay zombies and be rewarded"
+      "item.i_slay_mobs.islaymobsoriginalxmas": "Islaymobsoriginalxmas",
+      "item.i_slay_mobs.islaymobsremasterxmas": "Islaymobsremasterxmas"
     }
   },
   "workspaceSettings": {
