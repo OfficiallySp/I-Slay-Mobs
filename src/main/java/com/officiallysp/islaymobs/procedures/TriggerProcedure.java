@@ -13,7 +13,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
 
+import java.util.Map;
 import java.util.Iterator;
+import java.util.HashMap;
 
 import com.officiallysp.islaymobs.ISlayMobsModElements;
 
@@ -24,7 +26,7 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
-	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
+	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			System.err.println("Failed to load dependency entity for procedure Trigger!");
 			return;
@@ -56,11 +58,11 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 		if (event != null && event.getEntity() != null) {
 			Entity entity = event.getEntity();
 			Entity sourceentity = event.getSource().getTrueSource();
-			int i = (int) entity.getPosX();
-			int j = (int) entity.getPosY();
-			int k = (int) entity.getPosZ();
+			double i = entity.getPosX();
+			double j = entity.getPosY();
+			double k = entity.getPosZ();
 			World world = entity.world;
-			java.util.HashMap<String, Object> dependencies = new java.util.HashMap<>();
+			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);
 			dependencies.put("y", j);
 			dependencies.put("z", k);
