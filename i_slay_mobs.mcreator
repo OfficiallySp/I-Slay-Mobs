@@ -119,28 +119,81 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "islaymobsremasterxmas"
+    },
+    {
+      "name": "EnchantXmas",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchant_xmas"
+    },
+    {
+      "name": "DisenchantXmas",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "disenchant_xmas"
+    },
+    {
+      "name": "MeltXmas",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "melt_xmas"
+    },
+    {
+      "name": "XmasRemaster",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "xmas_remaster"
+    },
+    {
+      "name": "RemasterXmas",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "remaster_xmas"
     }
   ],
   "variable_elements": [],
   "sound_elements": [
     {
       "name": "og",
-      "file": "og",
+      "files": [
+        "og"
+      ],
       "category": "record"
     },
     {
       "name": "ogxmas",
-      "file": "ogxmas",
+      "files": [
+        "ogxmas"
+      ],
       "category": "record"
     },
     {
       "name": "remastered",
-      "file": "remastered",
+      "files": [
+        "remastered"
+      ],
       "category": "record"
     },
     {
       "name": "remasteredxmas",
-      "file": "remasteredxmas",
+      "files": [
+        "remasteredxmas"
+      ],
       "category": "record"
     }
   ],
@@ -165,24 +218,22 @@
   "workspaceSettings": {
     "modid": "i_slay_mobs",
     "modName": "I Slay Mobs",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "Slay Slay Slay Everyday",
     "author": "Shane Pepperell",
     "websiteURL": "https://officiallysp.sytes.net",
-    "disableForgeVersionCheck": false,
+    "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "updateURL": "https://raw.githubusercontent.com/OfficiallySp777/I-Slay-Mobs/master/Update.json",
     "modPicture": "original",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "just_enough_items"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000432115
+  "mcreatorVersion": 202000547520
 }

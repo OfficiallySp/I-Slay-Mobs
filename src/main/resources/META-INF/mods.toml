@@ -3,7 +3,7 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="i_slay_mobs"
-version="1.2.0"
+version="1.3.0"
 displayName="I Slay Mobs"
 credits="The greatest meme from 2015"
 displayURL="https://officiallysp.sytes.net"
@@ -21,17 +21,6 @@ Slay Slay Slay Everyday
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.i_slay_mobs]]
-    modId="forge"
-    mandatory=true
-    versionRange="[31.2.0]"
-    ordering="NONE"
-    side="BOTH"
 
 
-[[dependencies.i_slay_mobs]]
-    modId="just_enough_items"
-    mandatory=false
-    ordering="NONE"
-    side="BOTH"
 

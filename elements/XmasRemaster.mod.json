@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:IslaymobsOriginal"
+        "value": "CUSTOM:Islaymobsoriginalxmas"
       },
       {
         "value": ""
@@ -38,9 +38,9 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:IslaymobsRemaster"
+      "value": "CUSTOM:Islaymobsremasterxmas"
     },
-    "name": "enchant",
+    "name": "xmas_remaster",
     "namespace": "mod"
   }
 }
