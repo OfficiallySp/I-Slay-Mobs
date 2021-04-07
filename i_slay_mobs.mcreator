@@ -215,13 +215,18 @@
       "item.i_slay_mobs.islaymobsremasterxmas": "Music Disk"
     }
   },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
   "workspaceSettings": {
     "modid": "i_slay_mobs",
     "modName": "I Slay Mobs",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "description": "Slay Slay Slay Everyday",
     "author": "Shane Pepperell",
     "websiteURL": "https://officiallysp.sytes.net",
+    "license": "Not specified",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "updateURL": "https://raw.githubusercontent.com/OfficiallySp777/I-Slay-Mobs/master/Update.json",
@@ -230,10 +235,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.15.2",
+    "currentGenerator": "forge-1.16.5",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000547520
+  "mcreatorVersion": 202100112313
 }

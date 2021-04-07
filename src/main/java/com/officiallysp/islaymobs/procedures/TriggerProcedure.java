@@ -18,6 +18,7 @@ import java.util.Iterator;
 import java.util.HashMap;
 
 import com.officiallysp.islaymobs.ISlayMobsModElements;
+import com.officiallysp.islaymobs.ISlayMobsMod;
 
 @ISlayMobsModElements.ModElement.Tag
 public class TriggerProcedure extends ISlayMobsModElements.ModElement {
@@ -29,12 +30,12 @@ public class TriggerProcedure extends ISlayMobsModElements.ModElement {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				System.err.println("Failed to load dependency entity for procedure Trigger!");
+				ISlayMobsMod.LOGGER.warn("Failed to load dependency entity for procedure Trigger!");
 			return;
 		}
 		if (dependencies.get("sourceentity") == null) {
 			if (!dependencies.containsKey("sourceentity"))
-				System.err.println("Failed to load dependency sourceentity for procedure Trigger!");
+				ISlayMobsMod.LOGGER.warn("Failed to load dependency sourceentity for procedure Trigger!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
