@@ -1,5 +1,4 @@
 {
-  "id_map": {},
   "mod_elements": [
     {
       "name": "IslaymobsOriginal",
@@ -7,7 +6,6 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "islaymobs_original"
     },
     {
@@ -16,7 +14,6 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "islaymobs_remaster"
     },
     {
@@ -25,7 +22,6 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "unlock"
     },
     {
@@ -34,7 +30,6 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "diskdrop"
     },
     {
@@ -43,7 +38,6 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enchant"
     },
     {
@@ -52,7 +46,6 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "trigger",
       "metadata": {
         "dependencies": [
@@ -73,7 +66,6 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "command_executed",
       "metadata": {
         "dependencies": [
@@ -90,7 +82,6 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "grantcommand"
     },
     {
@@ -99,7 +90,6 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "disenchant"
     },
     {
@@ -108,7 +98,6 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "islaymobsoriginalxmas"
     },
     {
@@ -117,7 +106,6 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "islaymobsremasterxmas"
     },
     {
@@ -126,7 +114,6 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "enchant_xmas"
     },
     {
@@ -135,7 +122,6 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "disenchant_xmas"
     },
     {
@@ -144,7 +130,6 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "melt_xmas"
     },
     {
@@ -153,7 +138,6 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "xmas_remaster"
     },
     {
@@ -162,7 +146,6 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
       "registry_name": "remaster_xmas"
     }
   ],
@@ -235,10 +218,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.16.5",
+    "currentGenerator": "forge-1.19.2",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100112313
+  "mcreatorVersion": 202200348217
 }

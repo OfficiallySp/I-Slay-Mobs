@@ -1,19 +1,21 @@
 {
-  "_fv": 17,
+  "_fv": 34,
   "_type": "musicdisc",
   "definition": {
-    "texture": "xmas",
     "name": "Music Disk",
+    "texture": "xmas",
     "description": "I Slay Mobs",
     "creativeTab": {
       "value": "MISC"
     },
-    "music": {
-      "value": "CUSTOM:remasteredxmas"
-    },
     "specialInfo": [
       "Remastered Christmas Edition"
     ],
-    "hasGlow": true
+    "hasGlow": true,
+    "music": {
+      "value": "CUSTOM:remasteredxmas"
+    },
+    "lengthInTicks": 0,
+    "analogOutput": 0
   }
 }

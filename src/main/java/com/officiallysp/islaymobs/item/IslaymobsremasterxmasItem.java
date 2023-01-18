@@ -1,54 +1,37 @@
 
 package com.officiallysp.islaymobs.item;
 
-import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.World;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.item.Rarity;
-import net.minecraft.item.MusicDiscItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.RecordItem;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 
 import java.util.List;
 
-import com.officiallysp.islaymobs.ISlayMobsModElements;
-
-@ISlayMobsModElements.ModElement.Tag
-public class IslaymobsremasterxmasItem extends ISlayMobsModElements.ModElement {
-	@ObjectHolder("i_slay_mobs:islaymobsremasterxmas")
-	public static final Item block = null;
-	public IslaymobsremasterxmasItem(ISlayMobsModElements instance) {
-		super(instance, 12);
+public class IslaymobsremasterxmasItem extends RecordItem {
+	public IslaymobsremasterxmasItem() {
+		super(0, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("i_slay_mobs:remasteredxmas")),
+				new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE), 0);
 	}
 
 	@Override
-	public void initElements() {
-		elements.items.add(() -> new MusicDiscItemCustom());
+	@OnlyIn(Dist.CLIENT)
+	public boolean isFoil(ItemStack itemstack) {
+		return true;
 	}
-	public static class MusicDiscItemCustom extends MusicDiscItem {
-		public MusicDiscItemCustom() {
-			super(0, ISlayMobsModElements.sounds.get(new ResourceLocation("i_slay_mobs:remasteredxmas")),
-					new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).rarity(Rarity.RARE));
-			setRegistryName("islaymobsremasterxmas");
-		}
 
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public boolean hasEffect(ItemStack itemstack) {
-			return true;
-		}
-
-		@Override
-		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Remastered Christmas Edition"));
-		}
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		list.add(Component.literal("Remastered Christmas Edition"));
 	}
 }
