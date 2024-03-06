@@ -6,7 +6,13 @@
       "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "islaymobs_original"
+      "registry_name": "islaymobs_original",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/item/IslaymobsOriginalItem.java",
+          "src/main/resources/assets/i_slay_mobs/models/item/islaymobs_original.json"
+        ]
+      }
     },
     {
       "name": "IslaymobsRemaster",
@@ -14,7 +20,13 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "islaymobs_remaster"
+      "registry_name": "islaymobs_remaster",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/item/IslaymobsRemasterItem.java",
+          "src/main/resources/assets/i_slay_mobs/models/item/islaymobs_remaster.json"
+        ]
+      }
     },
     {
       "name": "Unlock",
@@ -22,7 +34,12 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "unlock"
+      "registry_name": "unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/advancements/unlock.json"
+        ]
+      }
     },
     {
       "name": "Diskdrop",
@@ -30,7 +47,12 @@
       "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "diskdrop"
+      "registry_name": "diskdrop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/loot_tables/diskdrop.json"
+        ]
+      }
     },
     {
       "name": "Enchant",
@@ -38,7 +60,12 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enchant"
+      "registry_name": "enchant",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/recipes/enchant.json"
+        ]
+      }
     },
     {
       "name": "Trigger",
@@ -48,6 +75,9 @@
       "locked_code": false,
       "registry_name": "trigger",
       "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/procedures/TriggerProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -68,6 +98,9 @@
       "locked_code": false,
       "registry_name": "command_executed",
       "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/procedures/CommandExecutedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -82,7 +115,12 @@
       "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grantcommand"
+      "registry_name": "grantcommand",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/command/GrantcommandCommand.java"
+        ]
+      }
     },
     {
       "name": "Disenchant",
@@ -90,7 +128,12 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "disenchant"
+      "registry_name": "disenchant",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/recipes/disenchant.json"
+        ]
+      }
     },
     {
       "name": "Islaymobsoriginalxmas",
@@ -98,7 +141,13 @@
       "sortid": 11,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "islaymobsoriginalxmas"
+      "registry_name": "islaymobsoriginalxmas",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/item/IslaymobsoriginalxmasItem.java",
+          "src/main/resources/assets/i_slay_mobs/models/item/islaymobsoriginalxmas.json"
+        ]
+      }
     },
     {
       "name": "Islaymobsremasterxmas",
@@ -106,7 +155,13 @@
       "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "islaymobsremasterxmas"
+      "registry_name": "islaymobsremasterxmas",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/item/IslaymobsremasterxmasItem.java",
+          "src/main/resources/assets/i_slay_mobs/models/item/islaymobsremasterxmas.json"
+        ]
+      }
     },
     {
       "name": "EnchantXmas",
@@ -114,7 +169,12 @@
       "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enchant_xmas"
+      "registry_name": "enchant_xmas",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/recipes/enchant_xmas.json"
+        ]
+      }
     },
     {
       "name": "DisenchantXmas",
@@ -122,7 +182,12 @@
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "disenchant_xmas"
+      "registry_name": "disenchant_xmas",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/recipes/disenchant_xmas.json"
+        ]
+      }
     },
     {
       "name": "MeltXmas",
@@ -130,7 +195,12 @@
       "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "melt_xmas"
+      "registry_name": "melt_xmas",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/recipes/melt_xmas.json"
+        ]
+      }
     },
     {
       "name": "XmasRemaster",
@@ -138,7 +208,12 @@
       "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "xmas_remaster"
+      "registry_name": "xmas_remaster",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/recipes/xmas_remaster.json"
+        ]
+      }
     },
     {
       "name": "RemasterXmas",
@@ -146,7 +221,97 @@
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "remaster_xmas"
+      "registry_name": "remaster_xmas",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/i_slay_mobs/recipes/remaster_xmas.json"
+        ]
+      }
+    },
+    {
+      "name": "Secretshade",
+      "type": "musicdisc",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "secretshade",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/item/SecretshadeItem.java",
+          "src/main/resources/assets/i_slay_mobs/models/item/secretshade.json"
+        ]
+      }
+    },
+    {
+      "name": "Shadesongcmd",
+      "type": "command",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadesongcmd",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/command/ShadesongcmdCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Shadecommand",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shadecommand",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/procedures/ShadecommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Myles",
+      "type": "livingentity",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "myles",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/client/renderer/MylesRenderer.java",
+          "src/main/resources/assets/i_slay_mobs/models/item/myles_spawn_egg.json",
+          "src/main/java/com/officiallysp/islaymobs/entity/MylesEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Cheeselogo",
+      "type": "painting",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheeselogo",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "Cheese",
+      "type": "enchantment",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheese",
+      "metadata": {
+        "files": [
+          "src/main/java/com/officiallysp/islaymobs/enchantment/CheeseEnchantment.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -178,24 +343,67 @@
         "remasteredxmas"
       ],
       "category": "record"
+    },
+    {
+      "name": "shade",
+      "files": [
+        "birthday_song"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "myleshurt",
+      "files": [
+        "hurt"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "mylesded",
+      "files": [
+        "death"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "myleslist",
+      "files": [
+        "list"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "item.islaymobs_remaster.name": "Music Disk",
       "item.i_slay_mobs.islaymobs_original.desc": "I Slay Mobs",
-      "item.record.islaymobs_original.desc": "I Slay Mobs",
+      "item.i_slay_mobs.secretshade": "Music Disk",
       "item.i_slay_mobs.islaymobs_remaster": "Music Disk",
+      "enchantment.i_slay_mobs.cheese": "Cheese",
+      "item.i_slay_mobs.secretshade.desc": "Shade\u0027s Sonnet",
       "advancements.unlock.title": "Slay Slay Slay Everyday",
       "item.record.islaymobs_remaster.desc": "I Slay Mobs",
+      "entity.i_slay_mobs.myles": "Myles",
+      "painting.i_slay_mobs.cheeselogo.title": "Myles Logo",
       "item.i_slay_mobs.islaymobs_original": "Music Disk",
+      "subtitles.shade": "",
+      "subtitles.myleslist": "",
+      "item.i_slay_mobs.islaymobsremasterxmas.desc": "I Slay Mobs",
+      "painting.i_slay_mobs.cheeselogo.author": "BigCheeseGames",
+      "subtitles.myleshurt": "",
+      "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
+      "item.i_slay_mobs.islaymobsremasterxmas": "Music Disk",
+      "item.record.islaymobs_original.desc": "I Slay Mobs",
       "item.islaymobs_original.name": "Music Disk",
       "advancements.unlock.descr": "Slay zombies and be rewarded",
-      "item.i_slay_mobs.islaymobsremasterxmas.desc": "I Slay Mobs",
+      "item.i_slay_mobs.myles_spawn_egg": "Myles Spawn Egg",
+      "subtitles.mylesded": "",
       "item.i_slay_mobs.islaymobsoriginalxmas.desc": "I Slay Mobs",
-      "item.i_slay_mobs.islaymobs_remaster.desc": "I Slay Mobs",
-      "item.i_slay_mobs.islaymobsoriginalxmas": "Music Disk",
-      "item.i_slay_mobs.islaymobsremasterxmas": "Music Disk"
+      "item.i_slay_mobs.islaymobsoriginalxmas": "Music Disk"
     }
   },
   "foldersRoot": {
@@ -205,23 +413,22 @@
   "workspaceSettings": {
     "modid": "i_slay_mobs",
     "modName": "I Slay Mobs",
-    "version": "1.3.1",
+    "version": "1.4",
     "description": "Slay Slay Slay Everyday",
     "author": "Shane Pepperell",
     "websiteURL": "https://officiallysp.sytes.net",
     "license": "Not specified",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "updateURL": "https://raw.githubusercontent.com/OfficiallySp777/I-Slay-Mobs/master/Update.json",
     "modPicture": "original",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.19.2",
+    "currentGenerator": "forge-1.20.1",
     "credits": "The greatest meme from 2015",
     "modElementsPackage": "com.officiallysp.islaymobs",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202200348217
+  "mcreatorVersion": 202300452316
 }

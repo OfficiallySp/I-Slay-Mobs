@@ -1,24 +1,21 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[47,)"
 license="Not specified"
 
 [[mods]]
 modId="i_slay_mobs"
-version="1.3.1"
+version="1.4"
 displayName="I Slay Mobs"
-credits="The greatest meme from 2015"
 displayURL="https://officiallysp.sytes.net"
-updateJSONURL="https://raw.githubusercontent.com/OfficiallySp777/I-Slay-Mobs/master/Update.json"
 logoFile="logo.png"
+credits="The greatest meme from 2015"
 authors="Shane Pepperell"
-description='''
-Slay Slay Slay Everyday
-'''
+description="Slay Slay Slay Everyday"
 
 [[dependencies.i_slay_mobs]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
+    versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 

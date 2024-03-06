@@ -1,6 +1,5 @@
 {
   "og": {
-    "category": "record",
     "sounds": [
       {
         "name": "i_slay_mobs:og",
@@ -9,7 +8,6 @@
     ]
   },
   "ogxmas": {
-    "category": "record",
     "sounds": [
       {
         "name": "i_slay_mobs:ogxmas",
@@ -18,7 +16,6 @@
     ]
   },
   "remastered": {
-    "category": "record",
     "sounds": [
       {
         "name": "i_slay_mobs:remastered",
@@ -27,11 +24,42 @@
     ]
   },
   "remasteredxmas": {
-    "category": "record",
     "sounds": [
       {
         "name": "i_slay_mobs:remasteredxmas",
         "stream": true
+      }
+    ]
+  },
+  "shade": {
+    "sounds": [
+      {
+        "name": "i_slay_mobs:birthday_song",
+        "stream": true
+      }
+    ]
+  },
+  "myleshurt": {
+    "sounds": [
+      {
+        "name": "i_slay_mobs:hurt",
+        "stream": false
+      }
+    ]
+  },
+  "mylesded": {
+    "sounds": [
+      {
+        "name": "i_slay_mobs:death",
+        "stream": false
+      }
+    ]
+  },
+  "myleslist": {
+    "sounds": [
+      {
+        "name": "i_slay_mobs:list",
+        "stream": false
       }
     ]
   }

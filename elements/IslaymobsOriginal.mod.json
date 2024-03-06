@@ -1,21 +1,26 @@
 {
-  "_fv": 34,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disk",
+    "rarity": "RARE",
     "texture": "original",
     "description": "I Slay Mobs",
     "creativeTab": {
       "value": "MISC"
     },
-    "specialInfo": [
-      "Original"
-    ],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": [
+        "Original"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:og"
     },
-    "lengthInTicks": 0,
+    "lengthInTicks": 5000,
     "analogOutput": 0
   }
 }

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "i_slay_mobs:islaymobs_original",
+    "i_slay_mobs:islaymobs_remaster",
+    "i_slay_mobs:islaymobsoriginalxmas",
+    "i_slay_mobs:islaymobsremasterxmas",
+    "i_slay_mobs:secretshade"
+  ]
+}
